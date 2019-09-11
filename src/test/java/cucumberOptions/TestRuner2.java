@@ -10,9 +10,9 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 //@RunWith(Cucumber.class)
 
 @CucumberOptions(
-		features = "src/test/java/features",
-		glue = "stepDefinations",
-		tags = "@SmokeTest, @RegTest", dryRun=true, monochrome=true,
+		features = "src/test/java/features/search.feature",
+		glue = "MyStepDefinations.java",
+	   monochrome=true,
 		plugin= {"pretty", "html:target/cucumber", "json:target/cucumber.json","junit:target/cukes.xml"})
 public class TestRuner2 extends AbstractTestNGCucumberTests {
 
