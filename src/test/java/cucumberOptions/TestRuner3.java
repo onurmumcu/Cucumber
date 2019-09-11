@@ -10,6 +10,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features = "src/test/java/features/search.feature",
 		glue = "stepDefinations", monochrome = true,
+		tags = "@SeleniumTest",
 		plugin= {"pretty", "html:target/cucumber", "json:target/cucumber.json","junit:target/cukes.xml"})
 public class TestRuner3 {
 
